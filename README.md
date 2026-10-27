@@ -1,51 +1,30 @@
-# Lab 5: Static Code Analysis — Ticket Booking System
+# SE Repo for all Submissions
 
-**Your file:** `ticket_booking_system.py`
+**Name:** Srijan Akshit  
+**SRN:** PES1UG24AM284  
+**Section:** E
 
-Follow the lab handout for the full instructions.
+## Lab 5: Static Code Analysis
 
-## About the program
+**Project:** Ticket Booking System
 
-A movie theater seating and ticketing manager. It reserves theater seats across pricing tiers, cancels tickets, computes promotional discounts, and exports seating charts.
+### Deliverables
 
-The code works, but only just. It has quality, style and security problems of the kind Pylint, Flake8 and Bandit are built to find.
+The `Lab5/` folder contains:
 
-## What to do
+- `ticket_booking_system.py`: Cleaned Python code with static analysis issues fixed.
+- `Lab5_Static_Code_Analysis_Report.docx`: Lab report.
+- `pylint_report_before.txt` and `pylint_report_after.txt`: Pylint reports before and after fixes.
+- `flake8_report_before.txt` and `flake8_report_after.txt`: Flake8 reports before and after fixes.
+- `bandit_report_before.txt` and `bandit_report_after.txt`: Bandit security reports before and after fixes.
 
-1. **Run it first** and read the output carefully:
-   ```bash
-   python ticket_booking_system.py
-   ```
-   It asks one question. Press Enter to use the default, then try a few inputs of your own. Not every problem in this file is something a tool will flag, so pay attention to output that looks wrong.
+### Results
 
-2. **Install the tools:**
-   ```bash
-   pip install pylint bandit flake8
-   ```
+- **Pylint:** 10.00/10 after fixes.
+- **Flake8:** No style violations reported.
+- **Bandit:** No issues identified.
 
-3. **Run the analysis** and save the reports:
-   ```bash
-   pylint ticket_booking_system.py > pylint_report.txt
-   bandit -r ticket_booking_system.py > bandit_report.txt
-   flake8 ticket_booking_system.py > flake8_report.txt
-   ```
+### Git History
 
-4. **Document the issues** in `issues.md` using this table (at least 4 rows, high and medium severity first):
+The Lab 5 work was organized into separate commits for security fixes, Python code quality improvements, and Flake8 fixes with the lab report.
 
-   | Issue | Type | Line(s) | Description | Fix Approach |
-   |-------|------|---------|-------------|--------------|
-   | ... | ... | ... | ... | ... |
-
-5. **Fix the code.** Fix at least 4 of the issues you documented, then rerun all three tools to confirm they are gone. Repeat until you are satisfied. The program should still do its job when you are done.
-
-6. **Reflect.** Answer the four reflection questions from the handout in `reflection.md`.
-
-## Deliverables
-
-1. `ticket_booking_system.py`: your cleaned version, with at least 4 issues fixed.
-2. `issues.md`: the completed issue table.
-3. `reflection.md`: your answers to the reflection questions.
-
-**Target:** aim for a Pylint score above 9.5 on your final file. A perfect 10.00/10 is very good.
-
-Be ready to explain the bugs you found and how you fixed them. You may be called on to present.
